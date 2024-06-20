@@ -1,0 +1,227 @@
+{
+  "appTemplates": [
+    {
+      "name": "default",
+      "url": "templates/default"
+    }
+  ],
+  "appName": "appName",
+  "template": "default",
+  "portalUrl": "https://topomat.maps.arcgis.com/",
+  "oauthappid": "h7nf2TSctlBeudim",
+  "oauthappid_tt": "QDvQklcZRkLwxAdy",
+  "oauthappid_dev": "h7nf2TSctlBeudim",
+  "authenticationPopup": false,
+  "proxyUrl": "",
+  "title": "Template _maps",
+  "subtitle": "",
+  "hastitlebar": true,
+  "haslogo": true,
+  "altlogourl": "assets/logo.png",
+  "altlogolink": "https://www.topomat.ch/",
+  "bgcolor": "#474749",
+  "brandcolor": "#539c33",
+  "textcolor": "#fff",
+  "opacity": "1",
+  "webmap": "59d2cbd667db4b1aa278360ff3869992",
+  "webscene": "15f3813e2aa1412c8dee10792e583c54",
+  "displayWkid": "2056",
+  "wkids": "2056,4326,102100",
+  "popupConfig": {
+    "enabled": true,
+    "docking": "bottom-center",
+    "geometryInfo": false,
+    "excludedFields": {
+      "type": [
+        "oid"
+      ],
+      "name": []
+    }
+  },
+  "home": "top-left",
+  "zoomLevel": "top-left",
+  "scalebar": "bottom-left",
+  "compass": "top-left",
+  "track": "top-left",
+  "basemapGallery": "expand:top-left",
+  "daylight": "expand:top-left",
+  "dSwitch": "top-right",
+  "search": "titlebar",
+  "daynight": "titlebar",
+  "localeSelector": "titlebar",
+  "exportConfig": {
+    "maxNumRecords": null,
+    "toCSV": true,
+    "toKML": true,
+    "toKMZ": true,
+    "toGeoJSON": true,
+    "toGPX": true
+  },
+  "helperServices": {
+    "elevationLayers": [
+      {
+        "title": "ground",
+        "url": "//elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer"
+      }
+    ],
+    "_profileService": "https://ge.ch/sitgags2/rest/services/RASTER/MNA_TERRAIN_COLLECTION/MapServer/",
+    "geometry": {
+      "url": null
+    },
+    "printTask": {
+      "url": null
+    }
+  },
+  "widgets": {
+    "zoomLevel": {
+      "class": "_maps/widgets/tools/Zoom"
+    },
+    "daynight": {
+      "class": "_maps/widgets/ui/DayNight",
+      "options": {
+        "night": true
+      }
+    },
+    "viewOptions": {
+      "class": "_maps/widgets/tools/ViewOptions"
+    },
+    "home": {
+      "class": "_maps/widgets/tools/Home"
+    },
+    "compass": {
+      "class": "_maps/widgets/tools/Compass"
+    },
+    "basemapGallery": {
+      "class": "_maps/widgets/tools/BasemapGallery"
+    },
+    "scalebar": {
+      "class": "_maps/widgets/tools/ScaleBar"
+    },
+    "bookmarks": {
+      "class": "_maps/widgets/tools/Bookmarks"
+    },
+    "daylight": {
+      "class": "_maps/widgets/tools/Daylight"
+    },
+    "measurement": {
+      "class": "_maps/widgets/tools/Measurement"
+    },
+    "basemapCard": {
+      "class": "_maps/widgets/data/layerList/BasemapCard",
+      "options": {
+        "hasCompareTool": true
+      }
+    },
+    "legend": {
+      "class": "_maps/widgets/legend/Legend"
+    },
+    "profile": {
+      "class": "_maps/widgets/tools/ProfileTool"
+    },
+    "dSwitch": {
+      "class": "_maps/widgets/tools/DSwitch"
+    },
+    "track": {
+      "class": "_maps/widgets/tools/Track"
+    },
+    "localeSelector": {
+      "class": "_maps/widgets/intl/LocaleSelector",
+      "options": {
+        "locales": [
+          "en",
+          "fr",
+          "de"
+        ]
+      }
+    },
+    "search": {
+      "class": "_maps/widgets/search/Search",
+      "options":{
+        "searchSources": [
+          {
+            "class": "_maps/widgets/search/sources/QuickerSearch",
+            "url": "https://demo.topomat.ch/api/typesense/multi_search?x-typesense-api-key=xyz",
+            "collection": "Geneve",
+            "placeholder": "...",
+            "name": "QuickerSearch local",
+            "zoomScale": 2000,
+            "wkid": 2056,
+            "maxResultsPerCategory": 5,
+            "maxResultsOnSingleCategory": 30
+          }
+        ]
+      }
+    },
+    "save": {
+      "class": "_maps/widgets/save/Save",
+      "options": {
+        "saveServiceUrl": "https://demo.topomat.ch/api/maps_services_topomat/",
+        "saveFavoritesOnServer": true,
+        "visibleElements": {
+          "defaultMap": true,
+          "shareMap": true,
+          "exportMap": true,
+          "saveOnServer": true,
+          "saveOnPortal": true
+        }
+      }
+    },
+    "data": {
+      "class": "_maps/widgets/data/DataPane",
+      "options": {
+        "tabs": [
+          {
+            "class": "_maps/widgets/data/Catalog",
+            "options": {
+              "title": "Catalogue",
+              "tooltip": "Données hiérarchiques",
+              "favorites": true
+            }
+          },
+          {
+            "class": "_maps/widgets/data/Content",
+            "options": {
+              "title": "Living Atlas",
+              "tooltip": "Données du Living Altas Esri",
+              "types": "Feature Service,Map Service,Image Service,KML,WMS,WFS,WMTS,Vector Tile Service,Web Map,Scene Service,Web Scene",
+              "categories": null,
+              "filterConfig": {
+                "tags": false,
+                "groups": true,
+                "favorites": true
+              },
+              "showPortalContent": false,
+              "showLivingAtlasContent": true
+            }
+          },
+          {
+            "class": "_maps/widgets/data/ContentBrowser",
+            "options": {
+              "title": "Données",
+              "groups": ["49e0b488b9504c7db5f8c0fd378c1a30"],
+              "types": "Feature Service",
+              "filterConfig": {
+                "tags": false,
+                "groups": true,
+                "favorites": true
+              }
+            }
+          },
+          {
+            "class": "_maps/widgets/data/Favorites",
+            "options": {
+              "title": "Favoris",
+              "tooltip": "Données ajoutées en favoris"
+            }
+          },
+          {
+            "class": "_maps/widgets/data/Import",
+            "options": {
+              "tooltip": "Import de fichiers externes"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

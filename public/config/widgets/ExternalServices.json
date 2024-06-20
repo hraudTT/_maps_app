@@ -1,0 +1,25 @@
+    {
+        "applications": [
+            {
+                "layers": [
+                    {
+                        "url": "https://ge.ch/sitgags1/rest/services/VECTOR/SITG_OPENDATA_01/MapServer/8450"
+                    }
+                ],
+                "scope": "multiple",
+                "template": "./config/widgets/externalServices/templates/parcelle"
+            },
+            {
+                "layers": [
+                    {
+                        "url": "https://ge.ch/sitgags1/rest/services/VECTOR/SITG_OPENDATA_01/MapServer/9810"
+                    },
+                    {
+                        "url": "https://tiles.arcgis.com/tiles/Yw7hmHuxwtA1GVg6/arcgis/rest/services/BATIMENT_3D/SceneServer"
+                    }
+                ],
+                "scope": "multiple",
+                "template": "./config/widgets/externalServices/templates/batiment"
+            }
+        ]
+    }

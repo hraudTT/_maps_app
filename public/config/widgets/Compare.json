@@ -1,0 +1,166 @@
+{
+    "items": [
+        {
+            "id": "614c7804c27d4eb8ba070c73186ac295",
+            "type": "layer-slider",
+            "properties": {
+                "value-type": "date-year",
+                "mode": "continuous",
+                "steps": [
+                    {
+                        "layers": [
+                            0
+                        ],
+                        "label": "2021",
+                        "value": 2021
+                    },
+                    {
+                        "layers": [
+                            1
+                        ],
+                        "label": "2020",
+                        "value": 2020
+                    },
+                    {
+                        "layers": [
+                            2
+                        ],
+                        "label": "2019",
+                        "value": 2019
+                    },
+                    {
+                        "layers": [
+                            3
+                        ],
+                        "label": "2018",
+                        "value": 2018
+                    },
+                    {
+                        "layers": [
+                            4
+                        ],
+                        "label": "2016",
+                        "value": 2016
+                    },
+                    {
+                        "layers": [
+                            5
+                        ],
+                        "label": "2015",
+                        "value": 2015
+                    },
+                    {
+                        "layers": [
+                            6
+                        ],
+                        "label": "2012",
+                        "value": 2012
+                    },
+                    {
+                        "layers": [
+                            7
+                        ],
+                        "label": "2011",
+                        "value": 2011
+                    },
+                    {
+                        "layers": [
+                            8
+                        ],
+                        "label": "2009",
+                        "value": 2009
+                    },
+                    {
+                        "layers": [
+                            9
+                        ],
+                        "label": "2005",
+                        "value": 2005
+                    },
+                    {
+                        "layers": [
+                            10
+                        ],
+                        "label": "2001",
+                        "value": 2001
+                    },
+                    {
+                        "layers": [
+                            11
+                        ],
+                        "label": "1996",
+                        "value": 1996
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1bbf905b5d9e42158b79aa375a257c2f",
+            "type": "layer-radios",
+            "properties": {
+                "value-type": "style",
+                "steps": [
+                    {
+                        "layers": [
+                            2
+                        ],
+                        "label": "Plan TPG"
+                    },
+                    {
+                        "layers": [
+                            1
+                        ],
+                        "label": "Plan vélo",
+                        "selected": true
+                    },
+                    {
+                        "layers": [
+                            0
+                        ],
+                        "label": "Plan de ville"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "e2f243f934144a9aa33064c8f63dade4",
+            "type": "layer-radios",
+            "properties": {
+                "value-type": "style",
+                "steps": [
+                    {
+                        "layers": [
+                            4
+                        ],
+                        "label": "Gris, sans texte"
+                    },
+                    {
+                        "layers": [
+                            3
+                        ],
+                        "label": "Gris"
+                    },
+                    {
+                        "layers": [
+                            2
+                        ],
+                        "label": "Contrasté",
+                        "selected": true
+                    },
+                    {
+                        "layers": [
+                            1
+                        ],
+                        "label": "Sans texte"
+                    },
+                    {
+                        "layers": [
+                            0
+                        ],
+                        "label": "Couleur"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,1166 @@
+{
+    "templates": [
+        {
+            "name": "A3 paysage avec légende",
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a3",
+                "orientation": "l",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 50,
+                        "font": {
+                            "size": 26
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 57,
+                            "top": 14
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 100,
+                        "alignment": "center",
+                        "position": {
+                            "left": 233,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 12
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "right": 14,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "left": 57,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 10,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 57,
+                            "right": 14,
+                            "top": 36,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 15,
+                            "top": 12,
+                            "height": 20
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 67,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "left": 7,
+                            "top": 30
+                        },
+                        "font": {
+                            "type": "bold",
+                            "size": 10
+                        },
+                        "content": "Légende"
+                    },
+                    {
+                        "type": "legend",
+                        "position": {
+                            "left": 7,
+                            "top": 40,
+                            "bottom": 15,
+                            "width": 49
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "A3 paysage sans légende",
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a3",
+                "orientation": "l",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 50,
+                        "font": {
+                            "size": 26
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 40,
+                            "top": 14
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 100,
+                        "alignment": "center",
+                        "position": {
+                            "left": 210,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 12
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "right": 14,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "left": 14,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 10,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 14,
+                            "right": 14,
+                            "top": 36,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 15,
+                            "top": 12,
+                            "height": 20
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 24,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    }
+                ]
+            },
+            "legendPage": "default"
+        },
+        {
+            "name": "A3 portrait avec légende",
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a3",
+                "orientation": "p",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 50,
+                        "font": {
+                            "size": 26
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 50,
+                            "top": 14
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 100,
+                        "alignment": "center",
+                        "position": {
+                            "left": 155,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 12
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "right": 14,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "left": 50,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 10,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 50,
+                            "right": 14,
+                            "top": 36,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 15,
+                            "top": 12,
+                            "height": 20
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 60,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "left": 7,
+                            "top": 30
+                        },
+                        "font": {
+                            "type": "bold",
+                            "size": 10
+                        },
+                        "content": "Légende"
+                    },
+                    {
+                        "type": "legend",
+                        "position": {
+                            "left": 7,
+                            "top": 40,
+                            "bottom": 15,
+                            "width": 42
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "A3 portrait sans légende",
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a3",
+                "orientation": "p",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 50,
+                        "font": {
+                            "size": 26
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 40,
+                            "top": 14
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 100,
+                        "alignment": "center",
+                        "position": {
+                            "left": 145,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 12
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "right": 14,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 12
+                        },
+                        "position": {
+                            "left": 14,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 10,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 14,
+                            "right": 14,
+                            "top": 36,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 15,
+                            "top": 12,
+                            "height": 20
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 24,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    }
+                ]
+            },
+            "legendPage": "default"
+        },
+        {
+            "name": "A4 paysage avec légende",
+            "default": true,
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a4",
+                "orientation": "l",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 50,
+                        "font": {
+                            "size": 20
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 40,
+                            "top": 12
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 100,
+                        "alignment": "center",
+                        "position": {
+                            "left": 160,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "right": 12,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "left": 40,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 8,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 40,
+                            "right": 12,
+                            "top": 30,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 13,
+                            "top": 12,
+                            "height": 15
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 50,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "left": 4,
+                            "top": 25
+                        },
+                        "font": {
+                            "type": "bold"
+                        },
+                        "content": "Légende"
+                    },
+                    {
+                        "type": "legend",
+                        "position": {
+                            "left": 4,
+                            "top": 30,
+                            "bottom": 15,
+                            "width": 35
+                        },
+                        "font": {
+                            "size": 6
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "A4 paysage sans légende",
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a4",
+                "orientation": "l",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 50,
+                        "font": {
+                            "size": 20
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 30,
+                            "top": 12
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 100,
+                        "alignment": "center",
+                        "position": {
+                            "left": 145,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "right": 12,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "left": 12,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 8,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 12,
+                            "right": 12,
+                            "top": 30,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 13,
+                            "top": 12,
+                            "height": 15
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 22,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    }
+                ]
+            },
+            "legendPage": "default"
+        },
+        {
+            "name": "A4 portrait avec légende",
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a4",
+                "orientation": "p",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 45,
+                        "font": {
+                            "size": 20
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 40,
+                            "top": 15
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 70,
+                        "alignment": "center",
+                        "position": {
+                            "left": 110,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "right": 12,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "left": 40,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 8,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 40,
+                            "right": 12,
+                            "top": 35,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 13,
+                            "top": 17,
+                            "height": 15
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 50,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "left": 4,
+                            "top": 30
+                        },
+                        "font": {
+                            "type": "bold"
+                        },
+                        "content": "Légende"
+                    },
+                    {
+                        "type": "legend",
+                        "position": {
+                            "left": 4,
+                            "top": 35,
+                            "bottom": 15,
+                            "width": 35
+                        },
+                        "font": {
+                            "size": 6
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "A4 portrait sans légende",
+            "font": {
+                "name": "avenir-next",
+                "type": "normal",
+                "size": 8
+            },
+            "mapPage": {
+                "format": "a4",
+                "orientation": "p",
+                "elements": [
+                    {
+                        "type": "dynamic",
+                        "name": "Titre",
+                        "control": "singleLineText",
+                        "defaultValue": "Titre",
+                        "maxLength": 45,
+                        "font": {
+                            "size": 20
+                        },
+                        "alignment": "left",
+                        "color": [
+                            100,
+                            100,
+                            100
+                        ],
+                        "position": {
+                            "left": 30,
+                            "top": 15
+                        }
+                    },
+                    {
+                        "type": "dynamic",
+                        "name": "Description",
+                        "control": "multiLineText",
+                        "maxLength": 90,
+                        "alignment": "center",
+                        "position": {
+                            "left": 95,
+                            "bottom": 15
+                        },
+                        "font": {
+                            "size": 10
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "right",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "right": 12,
+                            "bottom": 15
+                        },
+                        "content": "Date: #DATE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "font": {
+                            "size": 10
+                        },
+                        "position": {
+                            "left": 12,
+                            "bottom": 15
+                        },
+                        "content": "#SCALE#"
+                    },
+                    {
+                        "type": "text",
+                        "alignment": "left",
+                        "position": {
+                            "right": 8,
+                            "bottom": 24
+                        },
+                        "rotation": -90,
+                        "content": "Informations dépourvues de foi publique"
+                    },
+                    {
+                        "type": "map",
+                        "position": {
+                            "left": 12,
+                            "right": 12,
+                            "top": 35,
+                            "bottom": 21
+                        },
+                        "border": {
+                            "color": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "width": 0.1
+                        }
+                    },
+                    {
+                        "type": "northarrow",
+                        "url": "config/widgets/print/northArrow.png",
+                        "position": {
+                            "right": 13,
+                            "top": 17,
+                            "height": 15
+                        }
+                    },
+                    {
+                        "type": "scalebar",
+                        "model": "line",
+                        "alignment": "left",
+                        "position": {
+                            "left": 22,
+                            "bottom": 25,
+                            "width": 30
+                        }
+                    },
+                    {
+                        "type": "logo",
+                        "position": {
+                            "left": 10,
+                            "top": 5,
+                            "height": 10
+                        }
+                    }
+                ]
+            },
+            "legendPage": "default"
+        }
+    ],
+    "legendPages": {
+        "default": {
+            "format": "a4",
+            "orientation": "p",
+            "elements": [
+                {
+                    "type": "logo",
+                    "position": {
+                        "left": 20,
+                        "top": 10,
+                        "height": 10
+                    }
+                },
+                {
+                    "type": "text",
+                    "alignment": "left",
+                    "position": {
+                        "left": 20,
+                        "top": 25
+                    },
+                    "font": {
+                        "type": "bold",
+                        "size": 12
+                    },
+                    "content": "Légende"
+                },
+                {
+                    "type": "legend",
+                    "layout": "h",
+                    "position": {
+                        "left": 20,
+                        "top": 40,
+                        "right": 20,
+                        "bottom": 20
+                    }
+                }
+            ]
+        }
+    },
+    "scales": [
+        50,
+        100,
+        200,
+        500,
+        1000,
+        2000,
+        5000,
+        10000,
+        17500,
+        25000,
+        50000,
+        100000,
+        250000,
+        500000,
+        750000,
+        1000000
+    ]
+}
