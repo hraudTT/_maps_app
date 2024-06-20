@@ -32,6 +32,6 @@
   "dependencies": {
     "@arcgis/core": "~4.29.10",
     "@esri/calcite-components": "2.7.1",
-    "@topomat/maps": "link:../_maps_dev"
+    "@topomat/maps": "link:..\\_maps_dev"
   }
 }
